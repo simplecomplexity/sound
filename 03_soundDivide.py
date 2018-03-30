@@ -1,7 +1,7 @@
 #!/usr/local/bin/python
 # -*- coding: utf-8 -*-
 # MORIUMIUS スペシャルサイエンスプログラム　音声ファイル分割
-# Sound Spectrogram
+# Sound file divider
 # バージョン 1.0  Edited by Jun Komachi(2018/3/30)
 # matplotlib等のライブラリはできるだけ最新のバージョンを使ってください
 # pip install -U matplotlib でバージョンアップ可能です
@@ -14,7 +14,7 @@ from pydub.silence import split_on_silence
 import matplotlib.pyplot as plt
 import argparse
 
-opt = argparse.ArgumentParser(description='Sound Spectrogram')
+opt = argparse.ArgumentParser(description='Sound file devider by low volume part')
 opt.add_argument('-f', action='store', dest='file', required=True,
                  help='Input audio file')
 opts = opt.parse_args()
