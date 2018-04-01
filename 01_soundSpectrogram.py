@@ -86,7 +86,7 @@ argList = np.array(argList)
 df_amp = pd.DataFrame(data=ampList, index=time, columns=freq)
 
 # seabornのheatmapを使う
-plt.figure(figsize=(20,6))
+plt.figure(figsize=(10,6))
 sns.heatmap(data=np.log(df_amp.iloc[:, :200].T),
             xticklabels=100,
             yticklabels=10,

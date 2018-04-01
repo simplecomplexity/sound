@@ -1,5 +1,8 @@
 #!/usr/local/bin/python
 # -*- coding: utf-8 -*-
+# MORIUMIUS スペシャルサイエンスプログラム　音声ファイルトリミング
+# Sound Trimming
+# バージョン 1.0  Edited by Jun Komachi(2018/3/30)
 import os
 from pydub import AudioSegment
 import argparse
