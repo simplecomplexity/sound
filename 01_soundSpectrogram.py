@@ -88,10 +88,13 @@ df_amp = pd.DataFrame(data=ampList, index=time, columns=freq)
 # seabornのheatmapを使う
 plt.figure(figsize=(10,6))
 sns.heatmap(data=np.log(df_amp.iloc[:, :200].T),
+            vmin=2.5, vmax=15,
             xticklabels=100,
             yticklabels=10,
             cmap=plt.cm.gist_rainbow_r
             )
+plt.xlabel('Time[sec]')
+plt.ylabel('Frequency[Hz]')
 plt.show()
 
 # 偏角を可視化
